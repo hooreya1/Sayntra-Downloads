@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 비공개 보안 취약점 신고
+    url: https://github.com/hooreya1/Sayntra-Downloads/security/advisories/new
+    about: 민감한 보안 문제는 공개 Issue가 아닌 이 경로를 사용하세요.

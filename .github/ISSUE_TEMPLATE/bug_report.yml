@@ -1,0 +1,75 @@
+name: 버그 신고
+description: 음성·전사·클립보드 내용을 포함하지 않고 Sayntra 베타 문제를 신고합니다.
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        보안 취약점은 이 양식을 사용하지 말고 비공개 Security advisory로 신고하세요.
+        원본 음성, 실제 전사문, 클립보드, 창 제목, 개인 용어와 계정 정보를 적지 마세요.
+  - type: input
+    id: version
+    attributes:
+      label: Sayntra 버전
+      placeholder: 0.4.1
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows 버전과 빌드
+      placeholder: Windows 11 build 26100
+    validations:
+      required: true
+  - type: input
+    id: gpu
+    attributes:
+      label: GPU와 드라이버
+      placeholder: NVIDIA GPU 모델 / 드라이버 버전
+    validations:
+      required: true
+  - type: dropdown
+    id: trigger
+    attributes:
+      label: 녹음 입력
+      options:
+        - 키보드 단축키
+        - 마우스 X1
+        - 마우스 X2
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 재현 단계
+      description: 실제 발화나 텍스트 대신 KO_SHORT_01 같은 비식별 ID를 사용하세요.
+    validations:
+      required: true
+  - type: input
+    id: frequency
+    attributes:
+      label: 재현 횟수
+      placeholder: 10회 중 3회
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: 기대 결과와 실제 결과
+      description: 고정 상태명, 오류 코드 또는 예외 종류만 적으세요.
+    validations:
+      required: true
+  - type: textarea
+    id: doctor
+    attributes:
+      label: Doctor 요약
+      description: PASS/WARN/FAIL 수와 실패 검사명만 적고 전체 로그는 첨부하지 마세요.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: 개인정보 확인
+      options:
+        - label: 음성·전사문·클립보드·창 제목·개인 용어·계정 정보를 포함하지 않았습니다.
+          required: true
