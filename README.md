@@ -1,2 +1,2 @@
 # Sayntra-Downloads
-Official Sayntra Windows internal alpha downloads and checksums
+Official Sayntra Windows beta downloads and checksums
